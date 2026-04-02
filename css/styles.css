@@ -23,7 +23,7 @@ html {
 }
 
 body {
-    font-size: 14px;
+    font-size: 16px;
 	font-family: "afacad", sans-serif;
 	color: var(--text);
 	background-color: var(--bg);
@@ -56,8 +56,10 @@ img {
     display: block;
 }
 
-.site-nav__button svg {
-    color: var(--text);
+.nav__List {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
 }
 
 .site-icons svg {
@@ -181,7 +183,7 @@ img {
     color: var(--accent1);
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     padding-bottom: 3rem;
 }
 
@@ -302,11 +304,14 @@ img {
 
 .quote {
     margin: 2rem 0;
+    width: 70%;
+    margin: auto
 }
 
 .quote__text {
     font-family: "gloock", serif;
     font-size: 2rem;
+    text-align: center;
     line-height: 1.2;
     padding: 1rem 0;
     color: var(--accent2);
@@ -371,7 +376,7 @@ footer {
 
 @media screen and (min-width: 850px) {
     body {
-	font-size: 16px;
+	font-size: 18px;
     }
     .Atitle__name {
         position: absolute;
