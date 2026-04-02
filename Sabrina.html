@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta content="initial-scale=1.0,width=device-width" name="viewport">
+
+	<title>Passage-Sabrina</title>
+
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Darker+Grotesque:wght@300..900&family=Gloock&display=swap" rel="stylesheet">
+	
+	<script src="js/scripts.js"></script>
+</head>
+
+<body>
+	<header class="site-header">
+		<div class="header__logo-bar">
+        	<h1 class="site-logo"><a href="index.html">Passage</a></h1>
+    	</div>
+		<nav class="site-nav">
+			<div class="site-nav__button">
+				<svg width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17.2083 7H0.875C0.642936 7 0.420376 6.90781 0.256281 6.74372C0.0921871 6.57962 0 6.35706 0 6.125C0 5.89294 0.0921871 5.67038 0.256281 5.50628C0.420376 5.34219 0.642936 5.25 0.875 5.25H17.2083C17.4404 5.25 17.663 5.34219 17.8271 5.50628C17.9911 5.67038 18.0833 5.89294 18.0833 6.125C18.0833 6.35706 17.9911 6.57962 17.8271 6.74372C17.663 6.90781 17.4404 7 17.2083 7ZM17.2083 1.75H0.875C0.642936 1.75 0.420376 1.65781 0.256281 1.49372C0.0921871 1.32962 0 1.10706 0 0.875C0 0.642936 0.0921871 0.420376 0.256281 0.256281C0.420376 0.0921871 0.642936 0 0.875 0H17.2083C17.4404 0 17.663 0.0921871 17.8271 0.256281C17.9911 0.420376 18.0833 0.642936 18.0833 0.875C18.0833 1.10706 17.9911 1.32962 17.8271 1.49372C17.663 1.65781 17.4404 1.75 17.2083 1.75ZM17.2083 12.25H0.875C0.642936 12.25 0.420376 12.1578 0.256281 11.9937C0.0921871 11.8296 0 11.6071 0 11.375C0 11.1429 0.0921871 10.9204 0.256281 10.7563C0.420376 10.5922 0.642936 10.5 0.875 10.5H17.2083C17.4404 10.5 17.663 10.5922 17.8271 10.7563C17.9911 10.9204 18.0833 11.1429 18.0833 11.375C18.0833 11.6071 17.9911 11.8296 17.8271 11.9937C17.663 12.1578 17.4404 12.25 17.2083 12.25Z" fill="currentColor"/>
+				</svg>
+			</div>
+			<!-- js for darkmode -->
+			<ul class="site-icons">
+				<li>
+					<button class="button" onclick="document.body.classList.toggle('dark-mode')">
+						<svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M6.5 1.34219C5.42835 1.34189 4.38431 1.65801 3.51861 2.24492C2.65291 2.83182 2.01032 3.65915 1.68361 4.60747C1.3569 5.55579 1.36297 6.57604 1.70094 7.52095C2.03891 8.46585 2.6913 9.28653 3.56393 9.86451C4.00207 10.1553 4.33333 10.6358 4.33333 11.2066V12.75C4.33333 12.8735 4.44119 12.9737 4.57407 12.9737H8.42592C8.48977 12.9737 8.55101 12.9501 8.59615 12.9082C8.6413 12.8662 8.66667 12.8093 8.66667 12.75V11.2057C8.66667 10.6358 8.99792 10.1553 9.43607 9.86362C10.3083 9.28551 10.9603 8.46488 11.298 7.52015C11.6357 6.57541 11.6417 5.55541 11.315 4.60733C10.9883 3.65925 10.3459 2.8321 9.48052 2.24524C8.6151 1.65838 7.57139 1.34216 6.5 1.34219ZM1.82454e-06 6.03953C-1.43264e-05 5.00396 0.286556 3.98578 0.832186 3.08279C1.37782 2.17981 2.16418 1.42235 3.11573 0.88317C4.06729 0.343994 5.15208 0.0412162 6.26589 0.00391899C7.37971 -0.0333782 8.48514 0.196058 9.476 0.670191C10.4669 1.14432 11.3099 1.84722 11.924 2.71137C12.5382 3.57552 12.9029 4.57189 12.9831 5.60478C13.0634 6.63766 12.8564 7.67236 12.3821 8.60949C11.9078 9.54662 11.1821 10.3547 10.2748 10.9561C10.1535 11.0366 10.1111 11.1368 10.1111 11.2066V12.75C10.1111 13.1653 9.93356 13.5636 9.61753 13.8572C9.3015 14.1508 8.87286 14.3158 8.42592 14.3158H4.57407C4.12714 14.3158 3.6985 14.1508 3.38247 13.8572C3.06644 13.5636 2.88889 13.1653 2.88889 12.75V11.2057C2.88889 11.1368 2.84652 11.0366 2.72519 10.9561C1.88179 10.398 1.19435 9.66047 0.720272 8.80517C0.24619 7.94987 -0.000774487 7.0016 1.82454e-06 6.03953ZM2.88889 16.329C2.88889 16.151 2.96498 15.9803 3.10042 15.8544C3.23587 15.7286 3.41957 15.6579 3.61111 15.6579H9.38889C9.58043 15.6579 9.76413 15.7286 9.89958 15.8544C10.035 15.9803 10.1111 16.151 10.1111 16.329C10.1111 16.5069 10.035 16.6776 9.89958 16.8035C9.76413 16.9293 9.58043 17 9.38889 17H3.61111C3.41957 17 3.23587 16.9293 3.10042 16.8035C2.96498 16.6776 2.88889 16.5069 2.88889 16.329Z" fill="currentColor"/>
+						</svg>
+					</button>
+				</li>
+				<li>
+					<svg width="13" height="17" viewBox="0 0 13 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M12.25 17C12.0974 16.9971 11.9487 16.9534 11.82 16.8737L6.5 13.2697L1.18 16.8737C1.06249 16.9432 0.927571 16.98 0.79 16.98C0.652429 16.98 0.517508 16.9432 0.4 16.8737C0.284915 16.8161 0.187407 16.7301 0.117216 16.6245C0.0470251 16.5188 0.00660751 16.397 0 16.2714V2.67143C0 1.96292 0.289731 1.28343 0.805456 0.782443C1.32118 0.281453 2.02065 0 2.75 0H10.25C10.9793 0 11.6788 0.281453 12.1945 0.782443C12.7103 1.28343 13 1.96292 13 2.67143V16.2714C13.0005 16.4037 12.9634 16.5335 12.8928 16.6467C12.8223 16.7598 12.7209 16.8518 12.6 16.9126C12.4927 16.9697 12.3724 16.9998 12.25 17ZM6.5 11.6571C6.65325 11.6556 6.80331 11.6996 6.93 11.7834L11.5 14.8726V2.67143C11.5 2.34938 11.3683 2.04052 11.1339 1.8128C10.8995 1.58508 10.5815 1.45714 10.25 1.45714H2.75C2.41848 1.45714 2.10054 1.58508 1.86612 1.8128C1.6317 2.04052 1.5 2.34938 1.5 2.67143V14.8726L6.07 11.7834C6.19668 11.6996 6.34675 11.6556 6.5 11.6571Z" fill="currentColor"/>
+					</svg>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main class="wrapper">
+		<div class="title">
+			<h1 class="title__main">On Process,<br> Patience & Tea</h1>
+			<h2 class="title__name">
+        		<img src="signature.png" alt="Sabrina">
+    		</h2>
+			<p class="title__Description">A conversation about foundation courses, the real meaning of "complete," and one piece of advice she wishes someone had given her on day one.</p>
+			<div class="title__Info">
+				<p class="title__Info--Date">February 24 2026 · Interview by Alicia Jia</p>
+				<ul class="title__Info--shareicons">
+					<li><img src="twi.svg" alt="twitter"></li>
+					<li><img src="fb.svg" alt="facebook"></li>
+					<li><img src="ins.svg" alt="instagram"></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="bio">
+			<div class="bio_content1">
+				<div class="bio__image">
+					<img src="sabrina.jpeg" alt="sabrina">
+				</div>
+				<div class="bio__Content">
+					<h2 class="bio__Heading">Sabrina</h2>
+					<h3 class="bio__Subheading">21yrs old</h3>
+					<h3 class="bio__Subheading">8th term interaction design student </h3>
+					<div class="des">
+						<p class="bio__Description">Sabrina came to California from China for high school and stayed for the weather, the community, and eventually, ArtCenter. She's now in her final semester — and had a lot to say about the journey here.</p>
+					</div>
+		</div>
+			</div></div>
+
+		<div class="interview">
+				<h3 class="interview__quest">Why did you choose ArtCenter?</h3>
+				<p class="interview__ans">“In high school, my design teacher showed me a list of schools — ArtCenter, Calarts, Parsons, Pratt, and after looking through all of them, I felt like ArtCenter was the best fit for the IxD major. It ranked well, too. But honestly, a big part of it was California. I went to high school here, and I just didn't want to leave. The weather is also a factor — California is so dry that I've barely had any flare-ups since I got here. And there's a big Chinese community, which makes it feel more like home.</p>
+				
+				<h3 class="interview__quest">Do you have a favorite museum in L.A.?</h3>
+				<p class="interview__ans">I haven't been to that many, I've been to the Huntington Library, but I highly recommend the Norton Simon Museum. A lot of ArtCenter classes do field trips there, and you can get in free with your student ID. It has a beautiful collection across two or three floors, and outside there's a garden an outdoor garden reminiscent of Monet’s garden, which is stunning in the summer and great for inspiration.</p>
+				<div class="interview__Image">
+					<img src="museum.jpeg" alt="museum">
+				</div>
+
+				<h3 class="interview__quest">What was the most important class you took at Art Center?</h3>
+				<p class="interview__ans">I'd say the earlier ones, around Term 2 and Term 3. They teach a lot of foundational things: prototyping, interface design, the full design process. The higher-level courses either push you toward more immersive directions — VR, AR, or give you complete freedom to develop projects for your portfolio. Both are great, but the foundation is what everything else builds on.</p>
+				<p class="interview__ans">Each step of the process actually has a dedicated course. Research has its own class around Term 3. User testing has one too — I think it's called HCI. Then there are separate courses for prototyping and for interface design, covering both UI and UX. So by the time you reach the upper terms, you're really confident about handling each stage.</p>
+				
+				<h3 class="interview__quest">How did your mindset shift over the course of four years?</h3>
+				<p class="interview__ans">In the first term, everyone seems impossibly talented — classmates and instructors alike. You feel overwhelmed, anxious about how much you don't know yet. But as you take on more projects, you develop a sense of control. You start to understand how much time research actually takes, how to scope a prototype, what to expect from a user test.</p>
+				<p class="interview__ans">Later on, you even start forming your own opinions about instructors — you understand where their aesthetic sensibilities lie. I think that's when you know you've really grown. </p>
+				<blockquote class="quote">
+					<p class="quote__text">"You stop being intimidated by the process and start owning it."</p>
+				</blockquote>
+
+				<h3 class="interview__quest">Can you tell us about a recent project?</h3>
+				<p class="interview__ans">I made a tea ceremony conversation set for my Interaction Prototype class — it's more of a physical prototype than an interface project. The idea was a sensor-equipped tea tray: when you pick up the teacup, the sensor activates voice input, and when you set it down, your words are sent to an AI for a response.</p>
+				<div class="interview__Image">
+					<img src="teaset.jpeg" alt="teaset">
+				</div>
+				<p class="interview__ans">Tea in Chinese culture has always been tied to socializing, so I wanted to merge that ritual with the experience of conversation. Most of our chats now happen on screens,so I wanted to bring it back to something physical, something you can hold in your hands.</p>
+				<p class="interview__ans">Here's how it works: while the water heats, about three minutes, the system walks you through an onboarding experience. Once the tea is ready and you pour a cup, a conversation topic appears on screen as an icebreaker — something like "What's your favorite movie?" Then you pick up the cup to speak, take a sip, and set it down to signal you're done. The AI responds, and you go back and forth from there. Whenever you want to talk, just pick up the cup.</p>
+
+				<h3 class="interview__quest">How do you define a "complete" project?</h3>
+				<p class="interview__ans">For me, it's when your user test has zero issues. Your target user can use whatever you've built, an app, a feature, anything — with absolutely no friction. It's smooth, they know exactly what they're doing. That's what completeness means to me.</p>
+				<blockquote class="quote">
+					<p class="quote__text">"Completeness isn't about checking every step in the process. It's about whether the thing actually works for your target user."</p>
+				</blockquote>
+				<p class="interview__ans">Some people think you need the full package of research, UI, prototype, deployment to call a project complete. But honestly, what you put in your portfolio doesn't have to be end-to-end. It can be a single micro-interaction on one page. I've seen people whose entire portfolio piece is one animation in one app. At first I was shocked — that counts? But it really does, and there's surprising depth to it. How many iterations it took, what kind of feeling it creates. Those fine details matter enormously.</p>
+				<div class="interview__Image">
+					<img src="life.jpeg" alt="life">
+				</div>
+
+				<h3 class="interview__quest">Do you have any advice for your past self?</h3>
+				<p class="interview__ans">Yes, absolutely — I've been waiting to say this one.</p>
+				<p class="interview__ans"><em>Front-load your courses</em> Take as many classes as you can during the lower terms — five or six per semester if possible, summers included. While you still have the energy and motivation, load up. Because by Term 3 or 4, you won't be able to pull all-nighters anymore. Your body just won't let you. Your motivation dips. If you've already banked enough credits early on, you can afford to drop a class when you need to and still graduate on time.</p>
+				<p class="interview__ans"><em>And cap your studios</em>  Studios are five-hour sessions. Don't take more than three or four in one semester, four is genuinely the absolute max if you care about your wellbeing. </p>
+				<p class="interview__ans"><em>Give yourself permission to slow down later</em>  I loaded up like crazy in my early semesters — didn't even take summers off. Then later, I burned out. But it was okay, because I'd already done most of the work. Every semester toward the end, I dropped one class. And I still graduated on schedule. </p>
+				<blockquote class="quote">
+					<p class="quote__text">"I'm really grateful to my past self for frontloading. It gave me choices when I needed them most."</p>
+				</blockquote>
+		</div>
+
+		<h2 class="guide__Heading">Keep reading ——— <a href="Shanna.html">Shanna - Adjusting the Lens</a></h2>
+
+	</main>
+
+	<footer class="site-footer">
+		<p class="footer__Heading">Information</p>
+		<p class="footer__List">
+		<ul class="footer__List">
+			<li>About</li>
+			<li>Contact</li>
+			<li>Privacy Policy</li>
+			<li>Terms of Service</li>
+		</ul>
+		<p>© 2026 Passage</p>
+	</footer>
+
+</body>
+</html>
