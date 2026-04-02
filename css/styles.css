@@ -306,8 +306,9 @@ img {
 
 .quote__text {
     font-family: "gloock", serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1.2;
+    padding: 1rem 0;
     color: var(--accent2);
 }
 
