@@ -74,7 +74,7 @@ img {
 }
 
 .landing {
-    max-width: 800px;
+    max-width: 1200px;
     padding:1.5rem;
     margin: 0 auto;
 }
@@ -170,11 +170,11 @@ img {
 
 .Atitle {
     position: relative; 
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
 .Atitle__main{
-    padding-top: 1rem;
     font-family:"gloock", serif;
     font-size: 4rem;
     line-height: 1.1;
@@ -182,19 +182,20 @@ img {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 3rem;
+    padding-bottom: 3rem;
 }
 
 .Atitle__name {
     position:absolute;
-    bottom: 15%;
+    bottom: 40%;
     right: 20%;
     width: 60%;
 } 
 
 .Atitle__Description {
     color: var(--text);
-    font-size: 12px;
-    margin-bottom: 1rem;
+    font-family: "darker grotesque", serif;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -332,7 +333,16 @@ footer {
     margin: 0;
 }
 
-
+.Asite-footer {
+    font-size: 12px;
+    background-color: var(--accent1-header);
+    display: block;
+    padding: 0.8rem 2rem;
+    border-top: 1px solid var(--bordercolor);
+    line-height: 1.5rem;
+    margin: 0;
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 10;
+}
 .footer__List{
     display: flex;
     gap: 1.5rem;
@@ -364,16 +374,30 @@ footer {
     }
     .Atitle__name {
         position: absolute;
-        bottom: 10%; 
+        bottom: 20%; 
         right: 20%;
         width: 60%;
         margin: 0; 
     }
+    .Atitle__main{
+        font-family:"gloock", serif;
+        font-size: 6rem;
+        line-height: 1.1;
+        color: var(--accent1);
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+    }    
     .title__Info {
         display: flex;
         font-size: 1rem;
     }
-    
+    .Atitle {
+        position: relative; 
+        margin-bottom: 6rem;
+        margin-top: 3rem;
+    }
+        
     .title__main{
         padding-top: 3rem;
         font-family:"gloock", serif;
@@ -451,16 +475,16 @@ footer {
 
     .card__Heading {
         font-family: "darker grotesque", serif;
-        font-size: 1rem;
+        font-size: 1.25rem;
         margin: 0;
     }
     .card__Subheading {
         font-family: "darker grotesque", serif;
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin: 0;
     }
     .card__Description {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         font-weight: 100;
         margin: 0;
     }
